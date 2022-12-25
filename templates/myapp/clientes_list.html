@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romulo</title>
+</head>
+
+<body>
+  <h1>Lista de Clientes</h1>
+  <a href="{% url 'myapp:create' %}">Novo Cliente</a>
+  <ul>
+    {% for clientes in object_list %}
+    <li>
+      {{ clientes.nome }} -
+      <a href="{% url 'myapp:update' pk=clientes.id %}">Editar</a>
+      <a href="{% url 'myapp:detail' pk=clientes.id %}">Detalhar</a>
+      <a href="{% url 'myapp:delete' pk=clientes.id %}">Deletar</a>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+
+</html>
