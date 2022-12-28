@@ -1,0 +1,1 @@
+chave_secreta = 'django-insecure-#slaan$br_jqbync#5-680@s*$5d+10nls6151at+osffuf$uz'

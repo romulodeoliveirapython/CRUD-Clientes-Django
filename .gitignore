@@ -1,6 +1,7 @@
 CRUD
 db.sqlite3
 password
+definitions
 
 # Django #
 *.log
